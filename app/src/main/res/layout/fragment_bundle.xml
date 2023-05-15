@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFA500"
+    tools:context=".BundleFragment"
+    android:padding="30dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/requirement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="question" />
+
+    <CheckBox
+        android:id="@+id/answerOption1"
+        android:layout_width="85dp"
+        android:layout_height="62dp"
+        android:onClick="setAnswer1"
+        android:layout_below="@+id/requirement"
+        android:text="1" />
+
+    <CheckBox
+        android:id="@+id/answerOption2"
+        android:layout_width="85dp"
+        android:layout_height="62dp"
+        android:onClick="setAnswer2"
+
+        android:layout_below="@+id/answerOption1"
+        android:text="2" />
+
+    <CheckBox
+        android:id="@+id/answerOption3"
+        android:layout_width="85dp"
+        android:layout_height="62dp"
+        android:onClick="setAnswer3"
+        android:layout_below="@+id/answerOption2"
+        android:text="3" />
+
+    <CheckBox
+        android:id="@+id/answerOption4"
+        android:layout_width="85dp"
+        android:layout_height="62dp"
+        android:onClick="setAnswer4"
+        android:layout_below="@+id/answerOption3"
+        android:text="4" />
+
+
+</RelativeLayout>
